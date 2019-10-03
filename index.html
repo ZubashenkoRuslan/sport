@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <button class="burger" type="button">11</button>
+            <button class="burger" type="button"></button>
             <img class="header-logo" alt="header-logo" src="./img/h_logo.png" width="75px" height="33px">
             <nav class="navigation">
                 <ul class="nav-list">
@@ -51,8 +54,8 @@
                     </li>
                 </ul>
             </nav>
-            <input class="search-show" type="text">
-            <button class="search" type="button"></button>
+            <input class="search-show" id="search-show" type="text">
+            <button class="search" id="search" type="button"></button>
             <button class="login" type="button"></button>
             <select class="language" name="language">
                 <option value="rus">Рус</option>
@@ -78,11 +81,11 @@
                 <div class="result-info">
                     <h2>сегодня 12:00</h2>
                     <div class="result-wrapper-top">
-                        <img alt="logo-of-team" src="./img/san.png">
+                        <img class="logo-of-team" alt="logo-of-team" src="./img/san.png">
                         <h3 class="result-top-title">Пари Сен-Ж...</h3>
                     </div>
                     <div class="result-wrapper-bottom">
-                        <img alt="logo of team" src="./img/Barselona.png">
+                        <img class="logo-of-team" alt="logo of team" src="./img/Barselona.png">
                         <h3 class="result-bottom-title">Барселона</h3>
                     </div>
                 </div>
@@ -96,11 +99,11 @@
                 <div class="result-info">
                     <h2>сегодня 12:00</h2>
                     <div class="result-wrapper-top">
-                        <img alt="logo-of-team" src="./img/san.png">
+                        <img class="logo-of-team" alt="logo-of-team" src="./img/san.png">
                         <h3 class="result-top-title">Пари Сен-Ж...</h3>
                     </div>
                     <div class="result-wrapper-bottom">
-                        <img alt="logo of team" src="./img/Barselona.png">
+                        <img class="logo-of-team" alt="logo of team" src="./img/Barselona.png">
                         <h3 class="result-bottom-title">Барселона</h3>
                     </div>
                 </div>
@@ -114,11 +117,11 @@
                 <div class="result-info">
                     <h2>сегодня 12:00</h2>
                     <div class="result-wrapper-top">
-                        <img alt="logo-of-team" src="./img/san.png">
+                        <img class="logo-of-team" alt="logo-of-team" src="./img/san.png">
                         <h3 class="result-top-title">Пари Сен-Ж...</h3>
                     </div>
                     <div class="result-wrapper-bottom">
-                        <img alt="logo of team" src="./img/Barselona.png">
+                        <img class="logo-of-team" alt="logo of team" src="./img/Barselona.png">
                         <h3 class="result-bottom-title">Барселона</h3>
                     </div>
                 </div>
@@ -132,11 +135,11 @@
                 <div class="result-info">
                     <h2>сегодня 12:00</h2>
                     <div class="result-wrapper-top">
-                        <img alt="logo-of-team" src="./img/san.png">
+                        <img class="logo-of-team" alt="logo-of-team" src="./img/san.png">
                         <h3 class="result-top-title">Пари Сен-Ж...</h3>
                     </div>
                     <div class="result-wrapper-bottom">
-                        <img alt="logo of team" src="./img/Barselona.png">
+                        <img class="logo-of-team" alt="logo of team" src="./img/Barselona.png">
                         <h3 class="result-bottom-title">Барселона</h3>
                     </div>
                 </div>
@@ -150,15 +153,15 @@
                     </span>
                 </div>
             </div>
-            <div class="results-block">
+            <div class="results-block hidden">
                 <div class="result-info">
                     <h2>сегодня 12:00</h2>
                     <div class="result-wrapper-top">
-                        <img alt="logo-of-team" src="./img/san.png">
+                        <img class="logo-of-team" alt="logo-of-team" src="./img/san.png">
                         <h3 class="result-top-title">Пари Сен-Ж...</h3>
                     </div>
                     <div class="result-wrapper-bottom">
-                        <img alt="logo of team" src="./img/Barselona.png">
+                        <img class="logo-of-team" alt="logo of team" src="./img/Barselona.png">
                         <h3 class="result-bottom-title">Барселона</h3>
                     </div>
                 </div>
@@ -168,7 +171,7 @@
                     <span class="count-bottom title-live">2</span>
                 </div>
             </div>
-            <div class="results-block">
+            <div class="results-block hidden">
                 <div class="result-info">
                     <h2>21 ноября 12:00</h2>
                     <div class="result-wrapper-top">
@@ -201,7 +204,7 @@
                         <span class="slider-date">12 декабря 2019</span>
                     </div>
                     <h2 class="slider-title">Модрич: Усли Хорватия продолжит так играть, у нас будут
-                        большие проблемі с попаданием на Евро
+                        большие проблемы с попаданием на Евро
                     </h2>
                     <h3 class="slider-news">Обладатель золотого мяча не помог вице-чемпиону мира обыграть скромную
                         Венгрию</h3>
@@ -217,6 +220,7 @@
                     <div class="reviev-block">
                         <figure class="img-wrapper">
                             <img src="./img/football.jpg" alt="football image" class="football-img">
+                            <img src="./img/news-img-mob.png" alt="football image" class="football-img-mobile">
                         </figure>
                         <div class="reviev-content-wrapper">
                             <div class="date-who-wrapper">
@@ -238,6 +242,7 @@
                     <div class="reviev-block">
                         <figure class="img-wrapper">
                             <img src="./img/football2.jpg" alt="football image" class="football-img">
+                            <img src="./img/news-img-mob.png" alt="football image" class="football-img-mobile">
                         </figure>
                         <div class="reviev-content-wrapper">
                             <div class="date-who-wrapper">
@@ -273,7 +278,8 @@
                         <span class="news-time">20:45</span>
                         <span class="news-who">Золотой мяч</span>
                     </div>
-                    <h3 class="news-img-discription">Кардифф Сити не будет перечислять Нанту всю сумму за трансфер погибшего
+                    <h3 class="news-img-discription">Кардифф Сити не будет перечислять Нанту всю сумму за трансфер
+                        погибшего
                         Сала
                         <img src="./img/message-icon.png" alt="message icon" class="message">
                         <span class="message-count">3009</span>
@@ -326,13 +332,154 @@
             </div>
 
         </div>
-
-
-
-
     </div>
-    <footer class="footer"></footer>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-world">
+                <div class="world-uk">
+                    <h1 class="uk-title footer-title">Украина</h1>
+                    <div class="uk-wrapper">
+                        <div class="uk-left">
+                            <ul>
+                                <li class="footer-item">
+                                    <a href="#">Премьер-Лига</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Сборная Украины</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Первая Лига</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Вторая Лига</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uk-right">
+                            <ul>
+                                <li class="footer-item">
+                                    <a href="#">Аматорский футбол</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Футзал</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Кубок Украины</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Наши за границей</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="world-all">
+                    <h1 class="all-title footer-title">Мир</h1>
+                    <div class="world-wrapper">
+                        <div class="all-left">
+                            <ul>
+                                <li class="footer-item">
+                                    <a href="#">Чемпионат Англии</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Чемпионат Украины</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Чемпионат Италии</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Чемпионат Франции</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all-right">
+                            <ul>
+                                <li class="footer-item">
+                                    <a href="#">Чемпионат Германии</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Чемпионат России</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Лига Чемпионов</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Лига Европы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="world-different">
+                    <div class="different-left">
+                        <h1 class="competition-title footer-title">Турниры</h1>
+                        <ul>
+                            <li class="footer-item">
+                                <a href="#">Лига Чемпионов</a></li>
+                            <li class="footer-item">
+                                <a href="#">Лига Европы</a></li>
+                            <li class="footer-item">
+                                <a href="#">Чемпионат Мира 2018</a></li>
+                            <li class="footer-item">
+                                <a href="#">Лига Наций</a></li>
+                        </ul>
+                    </div>
+                    <div class="different-right">
+                        <h1 class="different-title footer-title">Разное</h1>
+                        <ul>
+                            <li class="footer-item">
+                                <a href="#">Рейтинг Фифа</a></li>
+                            <li class="footer-item">
+                                <a href="#">Рейтинг УЕФА</a></li>
+                            <li class="footer-item">
+                                <a href="#">Рейтинг Клубов</a></li>
+                            <li class="footer-item">
+                                <a href="#">Трансферы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="social">
+                    <img src="./img/twitter.png" alt="twitter" class="social-icon">
+                    <img src="./img/facebook_317727.png" alt="fb" class="social-icon">
+                    <img src="./img/google.png" alt="google" class="social-icon">
+                    <img src="./img/youtube.png" alt="youtube" class="social-icon">
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#">О проекте</a>
+                        <a href="#">Реклама на сайте</a>
+                        <a href="#">RSS </a>
+                        <a href="#"> Политика Конфиденциальности</a>
+                    </li>
+                </ul>
+                <span class="mobile">Мобильная версия</span>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <img src="./img/logo-footer.png" alt="logo footer">
+                    <p>
+                        Футбол 2002-2018. <br>
+                        Все права на материалы, находящиеся на сайте www.ua-football.com, охраняются в соответствии с<br>
+                        законодательством
+                        Украины.<br>
+                        Материалы сайта предназначены для лиц старше 18 лет (18+).<br>
+                        Пишите нам info@ua-football.com
+                    </p>
+                </div>
+                <div class="bottom-right">Наша апликуха на сторах:</div>
+            </div>
+        </div>
+        <div class="app-wrapper">
+                <img src="./img/googl;e-play-mob.png" alt="google play">
+                <img src="./img/google-play-mob.png" alt="app store">
+        </div>
+      
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="index.js"></script>
 </body>
 

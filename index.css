@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -10,6 +11,13 @@ body {
 
 .burger {
     display: none;
+    cursor: pointer;
+    margin-top: 21px;
+    margin-left: 20px;
+    width: 30px;
+    background: #000000 url(./img/burger-mob.png) no-repeat;
+    border: none;
+    outline: none;
 }
 
 .header {
@@ -30,13 +38,13 @@ body {
 .nav-item {
     list-style: none;
     padding: 5px;
-    
 }
 
 .nav-link {
     color: #ffffff;
     text-transform: uppercase;
     font-size: 11px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 1px;
@@ -73,6 +81,7 @@ body {
     width: 100px;
     padding: 5px 10px;
     margin-top: 17px;
+    background: none;
 }
 
 .login {
@@ -96,12 +105,12 @@ body {
     border: none;
     outline: none; 
     margin-top: 12px; 
+    margin-right: 5px;
 }
 
 .bread-crumbs {
     background-color: #f8f8f8;
     padding: 1px;
-
 }
 
 .crumbs-list {
@@ -113,6 +122,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     color: #b4b5c2;
     font-size: 12px;
     margin: 10px;
@@ -195,6 +205,8 @@ h1, h2, h3 {
 
 .logo-of-team {
     margin-bottom: 5px;
+    width: 18px;
+    height: 18px;
 }
 
 .count {
@@ -249,7 +261,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     color: #ffffff;
-    background: #faf9f6;
 }
 
 .slider {
@@ -275,6 +286,10 @@ h1, h2, h3 {
     outline: none;
 }
 
+.slider-prev:hover {
+    opacity: .8;
+}
+
 .slider-next {
     cursor: pointer;
     display: block;
@@ -283,6 +298,10 @@ h1, h2, h3 {
     height: 20px;
     border: none;
     outline: none; 
+}
+
+.slider-next:hover {
+    opacity: .8;
 }
 
 .slider-text-wrapper {
@@ -351,6 +370,9 @@ h1, h2, h3 {
     border: 1px solid #edebeb;;
     border-radius: 10px;
     padding: 15px;
+}
+.football-img-mobile {
+    display: none;
 }
 
 .reviev-content-wrapper {
@@ -422,6 +444,10 @@ h1, h2, h3 {
     padding: 5px; 
 }
 
+.reviev-btn:hover {
+    color: #4d4e50;
+}
+
 .reviev-selected {
     color: #ffffff;
     background: #f87007;
@@ -456,6 +482,7 @@ h1, h2, h3 {
     background-color: #313438;
     border-radius: 5px;
     margin-top: 20px;
+    margin-right: 20px;
     height: fit-content;
 }
 
@@ -504,6 +531,7 @@ h1, h2, h3 {
 .news-discription {
     font-size: 14px;
     padding: 10px 0;
+    font-weight: 400;
 }
 
 .border-none {
@@ -514,4 +542,273 @@ h1, h2, h3 {
     text-align: center;
     border-top:  1px solid #4e5154;
     color: #f87007;
+}
+
+.all-news:hover {
+    cursor: pointer;
+    color: #fa5311;
+}
+
+.footer {
+    background: #000000 url(./img/BitmapFooterBcg.png) no-repeat;
+    background-size: cover;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-world {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer-item {
+    list-style: none;
+    
+}
+.footer-item a {
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.world-uk {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.uk-wrapper {
+    display: flex;
+    border-top: 1px solid #4e5154;
+    
+}
+
+.uk-left {
+    margin-right: 20px;
+}
+
+.world-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-left {
+    margin-right: 20px;
+}
+
+.world-wrapper {
+    display: flex;
+    border-top: 1px solid #4e5154;
+}
+
+.world-different {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer-title {
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.competition-title {
+    border-bottom: 1px solid #4e5154;
+}
+
+.different-title {
+    border-bottom: 1px solid #4e5154;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #4e5154;
+    border-top: 1px solid #4e5154;
+}
+
+.social-icon {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.mobile {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 90px 20px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.bottom-right {
+    font-size: 15px;
+    padding-right: 150px;
+}
+
+.footer-list {
+    padding: 0;
+}
+
+.app-wrapper {
+    display: none;
+}
+
+
+@media (max-width: 1060px) {
+    .lifestyle, .rating, .sport, .tv {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+   .match, .video {
+    display: none;
+   } 
+   .content {
+    flex-direction: column;
+  }
+  .content-right {
+    margin: 0px auto;
+    max-width: 600px;
+  }
+  .news-img-wrapper {
+    background-size: cover;
+    padding-top: 200px;
+  }
+  .world-different {
+    width: 220px;
+  }
+  .footer-world {
+      flex-direction: column;
+  }
+  .world-uk {
+      padding-bottom: 20px;
+      margin: 0 auto;
+  }
+  .world-all {
+      padding-bottom: 20px;
+      margin: 0 auto;
+  }
+  .world-different {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 730px) {
+    .results {
+        display: none;
+    }
+    .slider {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 630px) {
+    .language {
+        display: none;
+    }
+    .search-show {
+        width: 60px;
+    }
+    .login {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+.burger {
+    display: block;
+}
+.navigation {
+    display: none;
+}
+}
+
+@media (max-width: 380px) {
+    .prev-next-wrapper {
+        display: none;
+    }
+    .slider-news {
+        display: none;
+    }
+    .slider-title {
+        font-size: 14px;
+    }
+    .slider-text-wrapper {
+        padding: 70px 10px 10px 10px;
+    }
+    .slider-btn {
+        width: 30px;
+        height: 3px;
+    }
+    .btn-wrapper {
+        max-width: 170px;
+    }
+    .reviev-discription {
+        display: none;
+    }
+    .football-img {
+        display: none;
+    }
+    .football-img-mobile {
+        display: block;
+    }
+    .reviev-date, .reviev-who {
+        font-size: 10px;
+    }
+    .reviev-title {
+        font-size: 11px;
+    }
+    .footer {
+        background: #202020;
+    }
+    .world-uk {
+        margin: 0;
+    }
+    .world-all {
+        margin: 0;
+    }
+    .world-different {
+        margin: 0;
+    }
+    .footer-middle {
+        flex-direction: column;
+    }
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
+    .bottom-right {
+        display: none;
+    }
+    .app-wrapper {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid #4e5154;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .footer-item a {
+        padding: 7px;
+    }
 }
